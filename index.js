@@ -1,1 +1,22 @@
 // Code your solution in this file!
+const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+
+const returnFirstTwoDrivers = function(drivers){
+    return drivers.slice(0,2)
+}
+
+
+const returnLastTwoDrivers = function(drivers){
+    return drivers.slice(-2)
+}
+
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
+console.log(selectingDrivers[0](drivers))
+
+function createFareMultiplier(num1){
+    return function(num2){
+        return num1 * num2
+    }
+}
+console.log(createFareMultiplier(2)(5))
+
